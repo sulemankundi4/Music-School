@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { HoverEffect } from "./ui/card-hover-effect";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const UpcomingWebinars = () => {
   const featuredWebinars = [
@@ -42,13 +43,28 @@ const UpcomingWebinars = () => {
       isFeatured: true,
     },
   ];
+  const words = [
+    {
+      text: "Enhance ",
+    },
+    {
+      text: "Your",
+    },
+    {
+      text: "Musical",
+    },
 
+    {
+      text: "Journey",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
   return (
     <div className="p-12 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">FEATURED WEBINARS</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Enhance Your Musical Journey</p>
+          <TypewriterEffectSmooth words={words} />
         </div>
 
         <div className="mt-10">
