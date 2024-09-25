@@ -6,7 +6,7 @@ import { cn } from "../utils/utils";
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-8" />
+      <Navbar className="top-4" />
     </div>
   );
 }
@@ -30,7 +30,7 @@ function Navbar({ className }) {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
+            <HoveredLink href="/team">Team</HoveredLink>sss
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
